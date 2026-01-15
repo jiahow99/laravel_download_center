@@ -2,13 +2,13 @@
 
 namespace Mices\DownloadCenter\Jobs;
 
-use App\Models\DownloadCenter;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Maatwebsite\Excel\Facades\Excel;
+use Mices\DownloadCenter\Models\DownloadCenter;
 use Throwable;
 
 class ExportJob implements ShouldQueue

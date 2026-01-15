@@ -3,7 +3,7 @@
 namespace Mices\DownloadCenter;
 
 use Illuminate\Support\ServiceProvider;
-use Mices\DownloadCenter\Facades\DownloadCenter;
+use Mices\DownloadCenter\Services\DownloadCenter;
 
 class DownloadCenterServiceProvider extends ServiceProvider
 {
