@@ -1,0 +1,32 @@
+{
+    "name": "mices/download-center",
+    "description": "Download Center with Excel export for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Liong Kah How",
+            "email": "liong.kh@mices.com.my"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "maatwebsite/excel": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mices\\DownloadCenter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mices\\DownloadCenter\\DownloadCenterServiceProvider"
+            ],
+            "aliases": {
+                "DownloadCenter": "Mices\\DownloadCenter\\Facades\\DownloadCenter"
+            }
+        }
+    }
+}
