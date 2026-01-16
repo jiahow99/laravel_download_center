@@ -40,7 +40,7 @@ class ExportJob implements ShouldQueue
     
             DownloadCenter::find($this->download_id)->update([
                 'status' => DownloadCenter::STATUS_COMPLETED,
-                'path' => 'download/' . $this->filename,
+                'path' => 'downloads/' . $this->filename,
             ]);
         } catch (\Throwable $th) {
             $this->failed($th);
