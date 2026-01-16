@@ -4,10 +4,12 @@ namespace Mices\DownloadCenter\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 
 class DownloadCenter extends Model
 {
     use HasFactory;
+    use CrudTrait;
 
     protected $fillable = [
         'name',

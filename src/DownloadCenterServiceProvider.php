@@ -34,9 +34,8 @@ class DownloadCenterServiceProvider extends ServiceProvider
 
         // Publish 
         $this->publishes([
+             __DIR__.'/../config/download_center.php' => config_path('download_center.php'),
             __DIR__.'/../stubs/DownloadCenterCrudController.php' => app_path('Http/Controllers/Admin/DownloadCenterCrudController.php'),
-        ], 'download-center');
-        $this->publishes([
             __DIR__.'/../database/migrations/2026_01_15_095205_create_download_centers_table.php' => database_path('migrations/' . date('Y_m_d_His') . '_create_download_centers_table.php'),
         ], 'download-center');
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace Mices\DownloadCenter\Http\Controllers\Admin;
 
 use App\Http\Requests\DownloadCenterRequest;
 use Mices\DownloadCenter\Models\DownloadCenter;
