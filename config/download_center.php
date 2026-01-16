@@ -15,4 +15,5 @@ return [
         ],
     ],
 
+    'admin_model' => config('auth.providers.users.model', App\Models\User::class),
 ];
