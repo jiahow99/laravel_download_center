@@ -26,7 +26,7 @@ class DownloadCenter extends Model
 
     public function initiatedBy()
     {
-        return $this->belongsTo(User::class, 'initiated_by');
+        return $this->belongsTo(config('download_center.admin_model'), 'initiated_by');
     }
 
     public static function getStatusLabel($id)
