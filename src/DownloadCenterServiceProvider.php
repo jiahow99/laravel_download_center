@@ -38,7 +38,7 @@ class DownloadCenterServiceProvider extends ServiceProvider
             __DIR__.'/./Models/DownloadCenter.php' => app_path('Models/DownloadCenter.php'),
             __DIR__.'/../stubs/DownloadCenterCrudController.php' => app_path('Http/Controllers/Admin/DownloadCenterCrudController.php'),
             __DIR__.'/../stubs/download.blade.php' => resource_path('views/vendor/backpack/crud/buttons/download.blade.php'),
-            __DIR__.'/../database/migrations/2026_01_15_095205_create_download_centers_table.php' => database_path('migrations/' . date('Y_m_d_His') . '_create_download_centers_table.php'),
+            __DIR__.'/../database/migrations/2026_01_15_095205_create_download_centers_table.php' => database_path('migrations/2026_01_15_095205_create_download_centers_table.php'),
         ], 'download-center');
     }
 }
