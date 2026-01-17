@@ -9,7 +9,7 @@ return [
         'download' => [
             'driver' => 'local',
             'root' => storage_path('app/public/downloads'),
-            'serve' => true,
+            'visibility' => 'public',
             'throw' => false,
             'report' => false,
         ],
